@@ -1,0 +1,331 @@
+# 🧩 System Design Roadmap
+
+---
+
+## 🧩 1. FOUNDATIONS (Why systems work at all)
+
+These are your roots. Without this, system design becomes guesswork.
+
+### 🔹 Networking (How systems talk)
+
+* HTTP / HTTPS → request-response model
+* REST APIs → stateless communication
+* TCP vs UDP → reliability vs speed
+* DNS → how domain becomes IP
+* TLS/SSL → secure communication
+
+👉 **Interview Insight:**
+If you design an API but don’t know HTTP → interviewer will catch you.
+
+---
+
+### 🔹 OS & Concurrency (How backend actually runs)
+
+* Process vs Thread → memory sharing
+* Context switching → CPU cost
+* Deadlocks → system freeze
+* Locks, Semaphores → controlling access
+* Async programming → non-blocking apps
+
+👉 Real use: Node.js async, Java threads, Python async
+
+---
+
+### 🔹 Databases (Where data lives)
+
+* SQL vs NoSQL → structured vs flexible
+* ACID → reliability rules
+* Indexing → speed optimization
+* Query optimization → efficient DB usage
+* Transactions → safe operations
+
+👉 **Interview Insight:**
+“Why did you choose NoSQL?” is a very common question
+
+---
+
+## 🧱 2. CORE SYSTEM DESIGN (The real game starts here)
+
+### 🔹 Scalability (Handling growth)
+
+* Vertical → increase machine power
+* Horizontal → add more machines
+* Auto-scaling → dynamic scaling
+
+👉 **Golden Rule:**
+Big companies scale horizontally
+
+---
+
+### 🔹 Load Balancing (Traffic control)
+
+* L4 (TCP level)
+* L7 (HTTP level)
+
+**Algorithms:**
+
+* Round Robin
+* Least Connections
+* IP Hash
+
+👉 Example:
+User request → Load balancer → best server
+
+---
+
+### 🔹 Caching (Speed booster)
+
+* Client cache (browser)
+* Server cache (Redis)
+* CDN cache
+
+**Eviction:**
+
+* LRU (remove least used)
+* LFU (remove least frequent)
+
+👉 **Interview Gold Line:**
+“Caching improves performance but introduces consistency challenges”
+
+---
+
+## ⚖️ 3. DISTRIBUTED SYSTEM PRINCIPLES (High-level thinking)
+
+### 🔹 Consistency Models
+
+* Strong → always correct
+* Eventual → correct after time
+* Read-after-write → immediate read consistency
+
+### 🔹 CAP Theorem
+
+* Consistency
+* Availability
+* Partition tolerance
+
+👉 **Rule:**
+You can’t achieve all 3 at the same time
+
+---
+
+### 🔹 Advanced
+
+* PACELC → latency vs consistency
+* Quorum → R, W, N math
+* Split-brain → cluster conflict
+
+---
+
+## 🗄️ 4. DATABASE SCALING (Handling big data)
+
+### 🔹 Replication
+
+* Master-slave
+* Multi-master
+* Read replicas
+
+👉 Improves availability + read performance
+
+---
+
+### 🔹 Sharding (Partitioning)
+
+* Range-based
+* Hash-based
+* Directory-based
+
+👉 Used in:
+
+* Facebook
+* Amazon
+
+---
+
+### 🔹 Storage Types
+
+* **RDBMS** → MySQL, PostgreSQL
+
+**NoSQL:**
+
+* Key-value → Redis
+* Document → MongoDB
+* Column → Cassandra
+* Graph → Neo4j
+
+---
+
+## ⚡ 5. PERFORMANCE OPTIMIZATION
+
+* Latency vs Throughput
+* CDN
+* Compression (Gzip, Brotli)
+* Connection pooling
+* Lazy loading
+
+👉 Think:
+“How fast + how many users?”
+
+---
+
+## 📨 6. ASYNCHRONOUS SYSTEMS (Decoupling systems)
+
+### 🔹 Message Queues
+
+* Kafka
+* RabbitMQ
+* SQS
+
+### 🔹 Concepts
+
+* Pub/Sub
+* Event-driven architecture
+* Retry mechanism
+* Dead-letter queue
+
+👉 Real use:
+Order system → queue → payment → notification
+
+---
+
+## 🔐 7. SECURITY
+
+* Authentication vs Authorization
+* OAuth, JWT
+* Rate limiting
+* HTTPS
+* Encryption (at rest + transit)
+
+---
+
+## 📦 8. API DESIGN
+
+* REST vs GraphQL
+* API versioning
+* Idempotency
+* Pagination
+* Rate limiting
+
+👉 **Interview Question:**
+“What happens if client sends same request twice?”
+
+---
+
+## 🧩 9. ARCHITECTURE
+
+### 🔹 Monolith vs Microservices
+
+👉 Netflix uses microservices
+
+### 🔹 Components
+
+* API Gateway
+* Service discovery
+* Circuit breaker
+* Service mesh
+
+---
+
+## ☁️ 10. DEVOPS (Your strong area 💪)
+
+* Docker
+* Kubernetes
+* CI/CD
+* Terraform
+
+**Monitoring:**
+
+* Prometheus
+* Grafana
+
+**Logging:**
+
+* ELK stack
+
+👉 This gives you an edge in interviews
+
+---
+
+## 📊 11. OBSERVABILITY
+
+* Logs → what happened
+* Metrics → system health
+* Tracing → request flow
+
+---
+
+## 🔄 12. RELIABILITY
+
+* Redundancy
+* Failover
+* Health checks
+* Chaos engineering
+* Backpressure
+
+---
+
+## 🧮 13. SYSTEM DESIGN MATH (VERY IMPORTANT ⚠️)
+
+* Requests per second (RPS)
+* Storage calculation
+* Bandwidth estimation
+* Latency budget
+
+👉 Example:
+1M users → how many servers?
+
+---
+
+## 🌍 14. CONTENT DELIVERY
+
+* CDN
+* Edge computing
+* Geo-replication
+
+👉 Used by:
+
+* YouTube
+* Netflix
+
+---
+
+## 🧠 15. DESIGN PATTERNS (System-level thinking)
+
+* Caching pattern
+* CQRS
+* Event sourcing
+* Saga pattern
+* Bulkhead pattern
+
+---
+
+## 🧪 16. REAL SYSTEM DESIGN QUESTIONS
+
+### 🟢 Beginner
+
+* URL Shortener
+* Rate limiter
+* Pastebin
+
+### 🟡 Intermediate
+
+* Chat app (like WhatsApp)
+* File storage (like Google Drive)
+* News feed (like Facebook)
+
+### 🔴 Advanced
+
+* Video streaming (like Netflix)
+* Ride sharing (like Uber)
+* Search engine (like Google)
+
+---
+
+## 📚 17. ADVANCED (Top 1% Engineers)
+
+* Distributed locks (Zookeeper)
+* Consensus (Paxos, Raft)
+* Leader election
+* Time sync (NTP)
+* Multi-region systems
+
+---
