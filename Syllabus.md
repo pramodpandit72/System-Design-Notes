@@ -14,9 +14,6 @@ These are your roots. Without this, system design becomes guesswork.
 * DNS → how domain becomes IP
 * TLS/SSL → secure communication
 
-👉 **Interview Insight:**
-If you design an API but don’t know HTTP → interviewer will catch you.
-
 ---
 
 ### 🔹 OS & Concurrency (How backend actually runs)
@@ -27,8 +24,6 @@ If you design an API but don’t know HTTP → interviewer will catch you.
 * Locks, Semaphores → controlling access
 * Async programming → non-blocking apps
 
-👉 Real use: Node.js async, Java threads, Python async
-
 ---
 
 ### 🔹 Databases (Where data lives)
@@ -38,10 +33,7 @@ If you design an API but don’t know HTTP → interviewer will catch you.
 * Indexing → speed optimization
 * Query optimization → efficient DB usage
 * Transactions → safe operations
-
-👉 **Interview Insight:**
-“Why did you choose NoSQL?” is a very common question
-
+  
 ---
 
 ## 🧱 2. CORE SYSTEM DESIGN (The real game starts here)
@@ -51,9 +43,6 @@ If you design an API but don’t know HTTP → interviewer will catch you.
 * Vertical → increase machine power
 * Horizontal → add more machines
 * Auto-scaling → dynamic scaling
-
-👉 **Golden Rule:**
-Big companies scale horizontally
 
 ---
 
@@ -68,9 +57,6 @@ Big companies scale horizontally
 * Least Connections
 * IP Hash
 
-👉 Example:
-User request → Load balancer → best server
-
 ---
 
 ### 🔹 Caching (Speed booster)
@@ -83,9 +69,6 @@ User request → Load balancer → best server
 
 * LRU (remove least used)
 * LFU (remove least frequent)
-
-👉 **Interview Gold Line:**
-“Caching improves performance but introduces consistency challenges”
 
 ---
 
@@ -102,9 +85,6 @@ User request → Load balancer → best server
 * Consistency
 * Availability
 * Partition tolerance
-
-👉 **Rule:**
-You can’t achieve all 3 at the same time
 
 ---
 
@@ -124,8 +104,6 @@ You can’t achieve all 3 at the same time
 * Multi-master
 * Read replicas
 
-👉 Improves availability + read performance
-
 ---
 
 ### 🔹 Sharding (Partitioning)
@@ -133,11 +111,6 @@ You can’t achieve all 3 at the same time
 * Range-based
 * Hash-based
 * Directory-based
-
-👉 Used in:
-
-* Facebook
-* Amazon
 
 ---
 
@@ -162,9 +135,6 @@ You can’t achieve all 3 at the same time
 * Connection pooling
 * Lazy loading
 
-👉 Think:
-“How fast + how many users?”
-
 ---
 
 ## 📨 6. ASYNCHRONOUS SYSTEMS (Decoupling systems)
@@ -181,9 +151,6 @@ You can’t achieve all 3 at the same time
 * Event-driven architecture
 * Retry mechanism
 * Dead-letter queue
-
-👉 Real use:
-Order system → queue → payment → notification
 
 ---
 
@@ -205,16 +172,11 @@ Order system → queue → payment → notification
 * Pagination
 * Rate limiting
 
-👉 **Interview Question:**
-“What happens if client sends same request twice?”
-
 ---
 
 ## 🧩 9. ARCHITECTURE
 
 ### 🔹 Monolith vs Microservices
-
-👉 Netflix uses microservices
 
 ### 🔹 Components
 
@@ -240,8 +202,6 @@ Order system → queue → payment → notification
 **Logging:**
 
 * ELK stack
-
-👉 This gives you an edge in interviews
 
 ---
 
@@ -270,9 +230,6 @@ Order system → queue → payment → notification
 * Bandwidth estimation
 * Latency budget
 
-👉 Example:
-1M users → how many servers?
-
 ---
 
 ## 🌍 14. CONTENT DELIVERY
@@ -280,11 +237,6 @@ Order system → queue → payment → notification
 * CDN
 * Edge computing
 * Geo-replication
-
-👉 Used by:
-
-* YouTube
-* Netflix
 
 ---
 
