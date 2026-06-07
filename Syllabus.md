@@ -281,3 +281,36 @@ These are your roots. Without this, system design becomes guesswork.
 * Multi-region systems
 
 ---
+
+## Summary 
+1. Event-Driven Architecture
+2. Serverless Architecture
+3. Stateful vs Stateless Systems
+4. Pub/Sub Architecture & Denormalization
+5. Query Optimization
+6. Redis Basics Systems
+7. Designing Highly Scalable Systems
+8. Capacity Estimation
+9. Throughput and Latency Availability
+10. Reliability
+11. Fault Tolerance
+12. CAP Theorem
+13. Consistency Models
+14. Replication Strategies
+15. Cold vs Warm Cache Nginx Basics HTTPS
+16. TCP/IP
+17. DNS
+18. DNS Caching
+19. WebSockets
+20. Long Polling
+21. REST APIs
+22. API Gateway
+23. RabbitMQ Basics
+24. Asynchronous Processing
+25. Event Streaming
+26. Pub/Sub Model DRY Principle
+27. KISS Principle
+28. YAGNI Principle
+29. Design Patterns (Factory, Singleton, Observer, Strategy) DDoS Basics Kubernetes Concepts Uber/Ola)
+30. Notification System
+    
