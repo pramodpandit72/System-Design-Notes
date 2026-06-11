@@ -282,7 +282,7 @@ These are your roots. Without this, system design becomes guesswork.
 
 ---
 
-## Summary 
+## Summary - GFG
 1. Event-Driven Architecture
 2. Serverless Architecture
 3. Stateful vs Stateless Systems
