@@ -11,7 +11,7 @@ Core Components of System Design
 • Message Queues
 • Monitoring and Logs
 
-Data Intensive vs Compute Intensive Applications
+1. Data Intensive vs Compute Intensive Applications
 • What makes an application data-intensive
 • What makes an application compute-intensive
 • Instagram architecture discussion
@@ -19,7 +19,7 @@ Data Intensive vs Compute Intensive Applications
 • CPU-bound and GPU-bound systems
 • Real-world scalability concerns
 
-Functional vs Non-Functional Requirements
+2. Functional vs Non-Functional Requirements - 2
 • Functional Requirements
 • Scalability
 • Availability
@@ -29,14 +29,14 @@ Functional vs Non-Functional Requirements
 • Maintainability
 • Observability
 
-DNS (Domain Name System)
+3. DNS (Domain Name System) - 3
 • How websites actually work
 • Root Server
 • TLD
 • Name Server
 • DNS Resolution process explained step-by-step
 
-APIs and Communication
+4. APIs and Communication - 4
 • What is an API
 • REST APIs
 • SOAP APIs
@@ -45,7 +45,7 @@ APIs and Communication
 • WebSockets
 • When and why to use each one
 
-REST API Deep Dive
+5. REST API Deep Dive - 5
 • HTTP Methods
 • GET, POST, PUT, PATCH, DELETE
 • Endpoints
@@ -55,7 +55,7 @@ REST API Deep Dive
 • Status Codes
 • API Design Best Practices
 
-SQL Databases
+6. SQL Databases - 6
 • Relational Databases
 • Tables, Rows, Columns
 • Constraints
@@ -65,7 +65,7 @@ SQL Databases
 • One-to-Many
 • Many-to-Many
 
-NoSQL Databases
+7. NoSQL Databases - 7
 • Why NoSQL is needed
 • Scaling challenges
 • Key-Value Databases
@@ -74,7 +74,7 @@ NoSQL Databases
 • Columnar Databases
 • SQL vs NoSQL
 
-Caching
+8. Caching - 8
 • Why cache is important
 • Cache Hit and Cache Miss
 • TTL
@@ -85,7 +85,7 @@ Caching
 • Cache Eviction Policies
 • LRU, LFU, FIFO, MRU, LIFO
 
-Load Balancer
+9. Load Balancer - 9
 • Why load balancers are needed
 • Round Robin
 • Least Connections
@@ -94,26 +94,26 @@ Load Balancer
 • GEO-based Routing
 • Health Checks
 
-Replication
+10. Replication 
 • Single Leader Replication
 • Multi Leader Replication
 • Leaderless Replication
 • Sync vs Async Replication
 • Quorum
 
-Partitioning (Sharding)
+11. Partitioning (Sharding)
 • Partition by Key
 • Partition by Hash
 • Secondary Index Partitioning
 • Hotspots and Challenges
 
-CAP Theorem
+12. CAP Theorem
 • Consistency
 • Availability
 • Partition Tolerance
 • Trade-offs in Distributed Systems
 
-Message Queue
+13. Message Queue
 • Sync vs Async Processing
 • FIFO Queue
 • Priority Queue
@@ -122,13 +122,13 @@ Message Queue
 • Poison Messages
 • Duplicate Messages
 
-Fault Tolerance
+14. Fault Tolerance
 • Hardware Failures
 • Software Failures
 • Human Errors
 • Recovery and Reliability
 
-Monitoring and Observability
+15. Monitoring and Observability
 • API Monitoring
 • Throughput
 • Latency
@@ -139,7 +139,7 @@ Monitoring and Observability
 • Disk IO
 • Network IO
 
-Final Case Study
+16. Final Case Study
 System Design of a Streaming Application
 • How to think while designing systems
 • Video Processing Architecture
